@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125816936-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-125816936-1');
+    </script>
+    <!-- Google Analytics end-->
+    <!-- Favicon -->
+    <!-- <link rel="icon" type="image/png" href="Assets/img/Favicon.png" sizes="16x16"> -->
+    <!-- Favicon end -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Timbre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="Assets/css/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Sidebar Begins-->
+    <div class="sidebar">
+        <div id="sidelogo">
+            <img src="https://via.placeholder.com/100">
+        </div>
+        <div id="restbutton">
+            <button id="home" onclick="location.href='index.html'">Home</button>
+            <br>
+            <button id="all_songs" onclick="location.href='allsongs.html'">All Songs</button>
+            <br>
+            <button id="add_songs" onclick="location.href='addsongs.html'">Add Songs</button>
+        </div>
+        <div id="filter">
+            <p id="filter_text">Filter By:</p>        
+            <button id="filter_english" onclick="">English</button>
+            <br>
+            <button id="filter_hindi" onclick="">Hindi</button>
+            <br>
+            <button id="filter_punjabi" onclick="">Punjabi</button>
+        </div>
+    </div>
+    <!-- Sidebar ends -->
+    <!-- Main area apart from sidebar begins-->
+    <div class="main_area">
+        <!-- Main Search area begins-->
+        <div class="main">
+            <div class="logo">
+                <img src="https://via.placeholder.com/150">
+            </div>
+            <div class="search-container">
+                <form action=>
+                    <div class="autocomplete" style="width:100%;">
+                        <input id="search-input" type="search" autocomplete="off" placeholder="Search songs or artists">
+                        <button type="submit" id="search_button" onclick="mainsubmit()">
+                            <i class="fa fa-search fa-lg"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="main_buttons">
+                    <button id="search_button2" onclick="mainsubmit()">Search</button>
+                    <button id="randomize_button" onclick="mainsubmit()">Randomize</button>
+            </div>
+        </div>
+        <!-- Main Search area ends-->
+        <!-- Scroll Down button starts -->
+        
+        <!-- Scroll Down button ends -->
+        <!-- Search results begin -->
+        <div id="results">
+            <div id="noofresults">About {n} results </div>           
+            <!-- All results will be appended here -->
+        </div>
+        <!-- Search results ends -->
+    </div>
+    <!-- Main area apart from sidebar ends-->
+    <!-- JS Script -->
+    <script src="Assets/js/mainpagesearch.js"></script>
+</body>
+</html>
