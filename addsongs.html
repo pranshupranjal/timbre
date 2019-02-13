@@ -18,6 +18,8 @@
     <title>Timbre</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="Assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="Assets/css/addsong.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
     <!-- Sidebar Begins-->
@@ -44,9 +46,34 @@
         <!-- Sidebar ends -->
         <!-- Main area apart from sidebar begins-->
         <div class="main_area">
-          
+            <div class="registration-form">
+            <header>
+                <h1>Add Song</h1>
+                <p>Fill in all informations</p>
+            </header>
+            <form>
+                <div class="input-section email-section">
+                <input class="email" type="email" placeholder="ENTER YOUR E-MAIL HERE" autocomplete="off"/>
+                <div class="animated-button"><span class="icon-paper-plane"><i class="far fa-envelope"></i></span><span class="next-button email"><i class="fa fa-arrow-up"></i></span></div>
+                </div>
+                <div class="input-section password-section folded">
+                <input class="password" type="password" placeholder="ENTER YOUR PASSWORD HERE"/>
+                <div class="animated-button"><span class="icon-lock"><i class="fas fa-lock"></i></span><span class="next-button password"><i class="fa fa-arrow-up"></i></span></div>
+                </div>
+                <div class="input-section repeat-password-section folded">
+                <input class="repeat-password" type="password" placeholder="REPEAT YOUR PASSWORD HERE"/>
+                <div class="animated-button"><span class="icon-repeat-lock"><i class="fas fa-lock"></i></span><span class="next-button repeat-password"><i class="fa fa-paper-plane"></i></span></div>
+                </div>
+                <div class="success"> 
+                <p>ACCOUNT CREATED</p>
+                </div>
+            </form>
+            </div>
         </div>
     <!-- JS Script -->
-    <!-- <script src="Assets/js/main.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="Assets/js/addsong.js"></script>
 </body>
 </html>

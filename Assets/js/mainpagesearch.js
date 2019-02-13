@@ -1,4 +1,4 @@
-var myJSON = '{"title":["JSON","CSS","Microsoft","Apple","Pranshu"], "url":["https://www.json.org/","wow","mi.com"],"snippet":["JSON (JavaScript Object Notation) is a lightweight data-interchange format. It is easy for humans to read and write. It is easy for machines to parse and generate. It is based on a subset of the JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999.","hello","mirror"]}';
+var myJSON = '{"title":["JSON","CSS","Microsoft","Apple","Pranshu"], "url":["https://www.json.org/","wow","mi.com"],"snippet":["JSON (JavaScript Object Notation)","hello","mirror"]}';
 var myObj = JSON.parse(myJSON);
 var i;
 
