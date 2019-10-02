@@ -1,53 +1,73 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125816936-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-125816936-1"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-125816936-1');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-125816936-1");
     </script>
     <!-- Google Analytics end-->
     <!-- Favicon -->
     <!-- <link rel="icon" type="image/png" href="Assets/img/Favicon.png" sizes="16x16"> -->
     <!-- Favicon end -->
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Timbre</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="Assets/css/main.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="Assets/css/grid.css" />
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="Assets/css/main.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="Assets/css/grid.css"
+    />
+  </head>
+  <body>
     <!-- Sidebar Begins-->
     <div class="sidebar">
-            <div id="sidelogo">
-                <img src="https://via.placeholder.com/100">
-            </div>
-            <div id="restbutton">
-                <button id="home" onclick="location.href='index.html'">Home</button>
-                <br>
-                <button id="all_songs" onclick="location.href='allsongs.html'">All Songs</button>
-                <br>
-                <button id="add_songs" onclick="location.href='addsongs.html'">Add Songs</button>
-            </div>
-            <div id="filter">
-                <p id="filter_text">Filter By:</p>        
-                <button id="filter_english" onclick="">English</button>
-                <br>
-                <button id="filter_hindi" onclick="">Hindi</button>
-                <br>
-                <button id="filter_punjabi" onclick="">Punjabi</button>
-            </div>
-        </div>
-        <!-- Sidebar ends -->
-        <!-- Main area apart from sidebar begins-->
-        <div class="main_area_allsongs">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 card">
+      <div id="sidelogo">
+        <img src="Assets/img/logo.png" />
+      </div>
+      <div id="restbutton">
+        <button id="home" onclick="location.href='index.html'">Home</button>
+        <br />
+        <button id="all_songs" onclick="location.href='allsongs.html'">
+          All Songs
+        </button>
+        <br />
+        <button id="add_songs" onclick="location.href='addsongs.html'">
+          Add Songs
+        </button>
+      </div>
+      <div id="filter">
+        <p id="filter_text">Filter By:</p>
+        <button id="filter_english" onclick="">English</button>
+        <br />
+        <button id="filter_hindi" onclick="">Hindi</button>
+        <br />
+        <button id="filter_punjabi" onclick="">Punjabi</button>
+      </div>
+    </div>
+    <!-- Sidebar ends -->
+    <!-- Main area apart from sidebar begins-->
+    <div class="main_area_allsongs">
+      <div class="container">
+        <div class="row">
+          <div id="songs_results">
+            <!-- <div class="col-md-3 card">
                         <div class="songcard">
                             <div class="songname">Ruin My Life</div>
                             <div class="singer">Zara Larson</div>
@@ -95,20 +115,27 @@
                             <div class="singer">Zara Larson</div>
                             <div class="language">English</div>
                         </div>
-                    </div>
-                    <!-- Last Card with add symbol -->
-                    <div class="col-md-3 card">
-                        <div class="songcard addsymbol">
-                            <a class="button plus" href="addsongs.html">
-                                <span class="bg" id="plus"></span>
-                                <span class="symbol"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                    </div> -->
+          </div>
+          <!-- Last Card with add symbol -->
+          <div class="col-md-3 card">
+            <div class="songcard addsymbol">
+              <a class="button plus" href="addsongs.html">
+                <span class="bg" id="plus"></span>
+                <span class="symbol"></span>
+              </a>
             </div>
+          </div>
         </div>
+      </div>
+    </div>
     <!-- JS Script -->
-    <!-- <script src="Assets/js/main.js"></script> -->
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="Assets/js/getdata.js"></script>
+    <script src="https://spreadsheets.google.com/feeds/cells/1yZOH5CH8Atsp60QjCU-FYzdcaTDMLld_PHzBNqrFqWU/1/public/values?alt=json-in-script&callback=doData"></script>
+  </body>
 </html>

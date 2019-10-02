@@ -1,79 +1,144 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125816936-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-125816936-1"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-125816936-1');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-125816936-1");
     </script>
     <!-- Google Analytics end-->
     <!-- Favicon -->
     <!-- <link rel="icon" type="image/png" href="Assets/img/Favicon.png" sizes="16x16"> -->
     <!-- Favicon end -->
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Timbre</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="Assets/css/main.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="Assets/css/addsong.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="Assets/css/main.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="Assets/css/addsong.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <!-- Sidebar Begins-->
     <div class="sidebar">
-            <div id="sidelogo">
-                <img src="https://via.placeholder.com/100">
+      <div id="sidelogo">
+        <img src="Assets/img/logo.png" />
+      </div>
+      <div id="restbutton">
+        <button id="home" onclick="location.href='index.html'">Home</button>
+        <br />
+        <button id="all_songs" onclick="location.href='allsongs.html'">
+          All Songs
+        </button>
+        <br />
+        <button id="add_songs" onclick="location.href='addsongs.html'">
+          Add Songs
+        </button>
+      </div>
+      <div id="filter">
+        <p id="filter_text">Filter By:</p>
+        <button id="filter_english" onclick="">English</button>
+        <br />
+        <button id="filter_hindi" onclick="">Hindi</button>
+        <br />
+        <button id="filter_punjabi" onclick="">Punjabi</button>
+      </div>
+    </div>
+    <!-- Sidebar ends -->
+    <!-- Main area apart from sidebar begins-->
+    <div class="main_area">
+      <div class="registration-form">
+        <header>
+          <h1>Add Song</h1>
+          <p>Fill in all informations</p>
+        </header>
+        <form>
+          <div class="input-section email-section">
+            <input
+              class="email"
+              type="email"
+              placeholder="ENTER YOUR E-MAIL HERE"
+              autocomplete="off"
+            />
+            <div class="animated-button">
+              <span class="icon-paper-plane"
+                ><i class="far fa-envelope"></i></span
+              ><span class="next-button email"
+                ><i class="fa fa-arrow-up"></i
+              ></span>
             </div>
-            <div id="restbutton">
-                <button id="home" onclick="location.href='index.html'">Home</button>
-                <br>
-                <button id="all_songs" onclick="location.href='allsongs.html'">All Songs</button>
-                <br>
-                <button id="add_songs" onclick="location.href='addsongs.html'">Add Songs</button>
+          </div>
+          <div class="input-section password-section folded">
+            <input
+              class="password"
+              type="password"
+              placeholder="ENTER YOUR PASSWORD HERE"
+            />
+            <div class="animated-button">
+              <span class="icon-lock"><i class="fas fa-lock"></i></span
+              ><span class="next-button password"
+                ><i class="fa fa-arrow-up"></i
+              ></span>
             </div>
-            <div id="filter">
-                <p id="filter_text">Filter By:</p>        
-                <button id="filter_english" onclick="">English</button>
-                <br>
-                <button id="filter_hindi" onclick="">Hindi</button>
-                <br>
-                <button id="filter_punjabi" onclick="">Punjabi</button>
+          </div>
+          <div class="input-section repeat-password-section folded">
+            <input
+              class="repeat-password"
+              type="password"
+              placeholder="REPEAT YOUR PASSWORD HERE"
+            />
+            <div class="animated-button">
+              <span class="icon-repeat-lock"><i class="fas fa-lock"></i></span
+              ><span class="next-button repeat-password"
+                ><i class="fa fa-paper-plane"></i
+              ></span>
             </div>
-        </div>
-        <!-- Sidebar ends -->
-        <!-- Main area apart from sidebar begins-->
-        <div class="main_area">
-            <div class="registration-form">
-            <header>
-                <h1>Add Song</h1>
-                <p>Fill in all informations</p>
-            </header>
-            <form>
-                <div class="input-section email-section">
-                <input class="email" type="email" placeholder="ENTER YOUR E-MAIL HERE" autocomplete="off"/>
-                <div class="animated-button"><span class="icon-paper-plane"><i class="far fa-envelope"></i></span><span class="next-button email"><i class="fa fa-arrow-up"></i></span></div>
-                </div>
-                <div class="input-section password-section folded">
-                <input class="password" type="password" placeholder="ENTER YOUR PASSWORD HERE"/>
-                <div class="animated-button"><span class="icon-lock"><i class="fas fa-lock"></i></span><span class="next-button password"><i class="fa fa-arrow-up"></i></span></div>
-                </div>
-                <div class="input-section repeat-password-section folded">
-                <input class="repeat-password" type="password" placeholder="REPEAT YOUR PASSWORD HERE"/>
-                <div class="animated-button"><span class="icon-repeat-lock"><i class="fas fa-lock"></i></span><span class="next-button repeat-password"><i class="fa fa-paper-plane"></i></span></div>
-                </div>
-                <div class="success"> 
-                <p>ACCOUNT CREATED</p>
-                </div>
-            </form>
-            </div>
-        </div>
+          </div>
+          <div class="success">
+            <p>ACCOUNT CREATED</p>
+          </div>
+        </form>
+      </div>
+    </div>
     <!-- JS Script -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
     <script src="Assets/js/addsong.js"></script>
-</body>
+  </body>
 </html>
